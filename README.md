@@ -6,9 +6,9 @@ KICK-OFF BACKEND
 |----------|:-------------:|
 |  200 | Success |
 |  400 | Crash or something went wrong |
+|  401 |  Invalid Token |
 |  404 |  Record Not Found |
 |  500 |  Invalid Password |
-|  401 |  Invalid Token |
 
 ## `npm install` 
 ## `npm start` 

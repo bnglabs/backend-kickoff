@@ -9,7 +9,7 @@ const TokenVerification = (req, res, next) => {
     }
     jwt.verify(token, Config.secret, (err, decoded) => {
         if (err) {
-            return res.status(400).send({ status: 400, message: "Token Unauthorized!" });
+            return res.status(401).send({ status: 401, message: "Token Unauthorized!" });
         }
         req.userId = decoded.id;
         next();
